@@ -1,0 +1,42 @@
+spring:
+  jackson:
+    time-zone: Asia/Ho_Chi_Minh
+  main:
+    banner-mode: off
+  datasource:
+    # MySQL config test
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/MANAHOTEL_DB
+    username: root
+    password: 123456
+    hikari:
+      poolName: Hikari
+      auto-commit: true
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: manahotelsystem@gmail.com
+    password: lqhtuhkkraozjpcc
+    # đổi sang email dưới này nhé
+#    username: manahotelsystem@gmail.com
+#    password: Manahotelsystem123
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  config:
+    link: http://localhost:3000
+    linkQr: https://api.vietqr.io
+
+
+
+
+

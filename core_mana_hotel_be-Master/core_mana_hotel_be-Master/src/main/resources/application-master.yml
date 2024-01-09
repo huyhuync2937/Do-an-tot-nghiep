@@ -1,0 +1,25 @@
+spring:
+  jackson:
+      time-zone: Asia/Ho_Chi_Minh
+  main:
+    banner-mode: off
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://manahoteldb.chcfkjpxl2uk.ap-southeast-1.rds.amazonaws.com:3306/MANAHOTEL_DB
+    username: manahoteldb
+    password: manahoteldb_123
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: manahotelsystem@gmail.com
+    password: lqhtuhkkraozjpcc
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  config:
+    link: http://manahotel.s3-website-ap-southeast-1.amazonaws.com
+    linkQr: https://api.vietqr.io
